@@ -1,0 +1,119 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.sidenav-trigger {
+  color: #26a69a;
+}
+
+.parallax-container {
+  min-height: 500px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
+/*stuff i added*/
+@font-face {
+    font-family: 'bombardierregular';
+    src: url('../webfontkit/bombard_-webfont.woff2') format('woff2'),
+         url('../webfontkit/bombard_-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'montserratbold';
+    src: url('../webfontkit/montserrat-bold-webfont.woff2') format('woff2'),
+         url('../webfontkit/montserrat-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'montserratregular';
+    src: url('../webfontkit/montserrat-regular-webfont.woff2') format('woff2'),
+         url('../webfontkit/montserrat-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+h1 {
+  font-family: bombardierregular;
+  letter-spacing: 7px;
+  margin-top: 150px;
+}
+
+h5 {
+  font-family: montserratbold;
+}
+
+a {
+  font-family: montserratregular;
+    letter-spacing: 1.5px;
+    color: white;
+    border-color: white;
+    border-radius: 2px;
+}
+
+a:hover{
+  color: black;
+  background-color: white
+
+}
+
+.btn-large {
+
+}
