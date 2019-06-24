@@ -22,12 +22,17 @@ p {
 .parallax-container {
   min-height: 500px;
   line-height: 0;
-  height: auto;
+  height: 100vh;
   color: rgba(255,255,255,.9);
 }
   .parallax-container .section {
     width: 100%;
   }
+
+  /*.container {
+    width: 100%;
+    height: 50vh;
+  } */
 
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
@@ -110,10 +115,23 @@ a {
 
 a:hover{
   color: black;
-  background-color: white
+  background-color: white;
 
 }
 
 .btn-large {
 
+}
+
+.card{
+  width:50vh;
+  min-height: 500px;
+  height: auto;
+  display: inline-block;
+}
+.row.right{
+  width: 10%;
+}
+#about{
+  padding-top: 5rem;
 }
