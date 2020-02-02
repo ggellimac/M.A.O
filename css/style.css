@@ -9,14 +9,19 @@
 nav ul a,
 nav .brand-logo {
   color: #444;
-  font-family: Montserrat, sans-serif;
-  font-size: 0.8rem;
-  font-weight:600;
-  letter-spacing: 0.15rem;
 }
 
 p {
   line-height: 2rem;
+}
+
+.maotimedia{
+  background-color: rgba(33, 33, 33, 0.5);
+  padding: 30px;
+}
+
+.about .card-title{
+  font-weight: bold;
 }
 
 .sidenav-trigger {
@@ -26,17 +31,12 @@ p {
 .parallax-container {
   min-height: 500px;
   line-height: 0;
-  height: 100vh;
+  height: auto;
   color: rgba(255,255,255,.9);
 }
   .parallax-container .section {
     width: 100%;
   }
-
-  /*.container {
-    width: 100%;
-    height: 50vh;
-  } */
 
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
@@ -98,7 +98,7 @@ footer.page-footer {
     font-style: normal;
 
 }
-
+/*"MOVEMENT AS ONE"*/
 h1 {
   font-family: bombardierregular;
   letter-spacing: 7px;
@@ -109,8 +109,8 @@ h5 {
   font-family: montserratbold;
 }
 
-a {
-  font-family: montserratregular;
+a { /*NAV BAR*/
+  font-family: montserratbold;
     letter-spacing: 1.5px;
     color: white;
     border-color: white;
@@ -119,23 +119,6 @@ a {
 
 a:hover{
   color: black;
-  background-color: white;
+  background-color: white
 
-}
-
-.btn-large {
-
-}
-
-/*.card{
-  width:50vh;
-  min-height: 500px;
-  height: auto;
-  display: inline-block;
-}*/
-.row.right{
-  width: 10%;
-}
-#about{
-  padding-top: 5rem;
 }
