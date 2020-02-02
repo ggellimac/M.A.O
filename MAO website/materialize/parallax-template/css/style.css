@@ -9,6 +9,10 @@
 nav ul a,
 nav .brand-logo {
   color: #444;
+  font-family: Montserrat, sans-serif;
+  font-size: 0.8rem;
+  font-weight:600;
+  letter-spacing: 0.15rem;
 }
 
 p {
@@ -123,12 +127,12 @@ a:hover{
 
 }
 
-.card{
+/*.card{
   width:50vh;
   min-height: 500px;
   height: auto;
   display: inline-block;
-}
+}*/
 .row.right{
   width: 10%;
 }
