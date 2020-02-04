@@ -25,7 +25,7 @@ p {
 }
 
 .sidenav-trigger {
-  color: #26a69a;
+  color: #FFFFFF;
 }
 
 .parallax-container {
@@ -108,8 +108,8 @@ h1 {
 h5 {
   font-family: montserratbold;
 }
-
-a { /*NAV BAR*/
+/*NAV BAR*/
+a {
   font-family: montserratbold;
     letter-spacing: 1.5px;
     color: white;
