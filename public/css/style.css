@@ -11,6 +11,16 @@ nav .brand-logo {
   color: #444;
 }
 
+nav {
+  display: inline-block;
+  font-weight: 400;
+/*  color: #fad6ab; */
+  font-size: 13px;
+/*  font-family: Oswald, sans-serif; */
+  letter-spacing: 1px;
+  padding: 0 3px
+}
+
 p {
   line-height: 2rem;
 }
@@ -20,16 +30,12 @@ p {
   padding: 30px;
 }
 
-.about .card-title{
-  font-weight: bold;
-}
-
 .sidenav-trigger {
   color: #FFFFFF;
 }
 
 .parallax-container {
-  min-height: 500px;
+  min-height: 380px;
   line-height: 0;
   height: auto;
   color: rgba(255,255,255,.9);
