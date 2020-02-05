@@ -65,13 +65,71 @@
 
  <div class="col s12 m4">
    <div class="icon-block">
-     <h2 class="center brown-text"><i class="material-icons">group</i></h2>
-     <h5 class="center">Welcoming Environment</h5>
+     <h2 class="center brown-text"><i class="material-icons">payment</i></h2>
+     <h5 class="center">SHIRT ORDER</h5>
 
-     <p class="light">As part of our mission, we believe in promoting a positve and encouraging social and learning atmosphere in order to
-     facilitate as much growth as possible for our dancers. Our values as a dance company extend past the classroom as we motivate our members
-     to be a part of this family by forming new bonds with each other through dancing, social events, and community service.</p>
+     <p class="light">You will be guaranteed a shirt if we receive your payment. Just filling out this form without paying does not guarentee receiving a shirt.</p>
    </div>
+ </div>
+
+ <div class="row">
+     <div class="col-lg-8 col-lg-offset-2">
+         <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
+         <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
+         <form action="https://formspree.io/maodancecompany@gmail.com" method="POST">
+             <div class="row control-group">
+                 <div class="form-group col-xs-12 floating-label-form-group controls">
+                     <label for="name">First Name</label>
+                     <input type="text" name="firstName" class="form-control" placeholder="First Name" id="firstName" required data-validation-required-message="Please enter your first name.">
+                     <p class="help-block text-danger"></p>
+                 </div>
+             </div>
+             <div class="row control-group">
+                 <div class="form-group col-xs-12 floating-label-form-group controls">
+                     <label for="name">Last Name</label>
+                     <input type="text" name="lastName" class="form-control" placeholder="Last Name" id="lastName" required data-validation-required-message="Please enter your last name.">
+                     <p class="help-block text-danger"></p>
+                 </div>
+             </div>
+             <div class="row control-group">
+                 <div class="form-group col-xs-12 floating-label-form-group controls">
+                     <label for="name">Phone Number</label>
+                     <input type="number" name="phone" class="form-control" placeholder="000-000-0000" id="name" required data-validation-required-message="Please enter your phone number.">
+                     <p class="help-block text-danger"></p>
+                 </div>
+             </div>
+             <div class="row control-group">
+                 <div class="form-group col-xs-12 floating-label-form-group controls">
+                     <label for="email">Email Address</label>
+                     <input type="email"  name="email" class="form-control" placeholder="Email Address" id="email" required data-validation-required-message="Please enter your email address.">
+                     <p class="help-block text-danger"></p>
+                 </div>
+             </div>
+
+             <div class="row control-group">
+                 <div class="form-group col-xs-12 floating-label-form-group controls">
+                     <label for="email">Email Address</label>
+                     <input type="email"  name="email" class="form-control" placeholder="Email Address" id="email" required data-validation-required-message="Please enter your email address.">
+                     <p class="help-block text-danger"></p>
+                 </div>
+             </div>
+
+             <div class="row control-group">
+                 <div class="form-group col-xs-12 floating-label-form-group controls">
+                     <label for="message">Message</label>
+                     <textarea rows="5" name="message" class="form-control" placeholder="Message" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                     <p class="help-block text-danger"></p>
+                 </div>
+             </div>
+             <br>
+             <div id="success"></div>
+             <div class="row">
+                 <div class="form-group col-xs-12">
+                     <button type="submit" class="btn btn-success btn-lg">Send</button>
+                 </div>
+             </div>
+         </form>
+     </div>
  </div>
 
 
