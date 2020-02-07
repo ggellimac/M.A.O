@@ -25,6 +25,7 @@ p {
   line-height: 2rem;
 }
 
+
 .maotimedia{
   background-color: rgba(33, 33, 33, 0.5);
   padding: 30px;
@@ -40,9 +41,80 @@ p {
   height: auto;
   color: rgba(255,255,255,.9);
 }
-  .parallax-container .section {
+.parallax-container .section {
     width: 100%;
   }
+
+
+  .image-stack::after {
+      content: ' ';
+      display: table;
+      clear: both;
+    }
+
+    .image-stack__item--top {
+        float: left;
+        width: 75%;
+        position: relative;
+        z-index: 1; // tells the browser to make this image on top
+    }
+
+    .image-stack__item--bottom {
+        float: right;
+        width: 75%;
+    }
+
+  @supports (display: grid) {
+    .image-stack {
+      display: grid;
+      position: relative; // imperative for the overlapping to work
+      grid-template-columns: 2fr, 2fr, 2fr, 2fr;
+    }
+
+    .image-stack__item--bottom {
+      grid-column: 3;
+      grid-row: 3;
+      width: 100%;
+      padding-top: 0%;
+      padding-left: 0%;
+    }
+
+    .image-stack__item--top {
+      grid-row: 1;
+      grid-column: 1;
+      padding-top: 0%; // slightly arbitrary, keeps proportion once resized
+      width: 100%;
+    }
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #fdd835
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
 
 @media only screen and (max-width : 992px) {
   .parallax-container .section {
@@ -127,4 +199,9 @@ a:hover{
   color: black;
   background-color: white
 
+}
+
+img {
+  width: 100%;
+  display: block;
 }
