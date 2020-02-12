@@ -36,3 +36,17 @@ $(document).ready(function () {
 
 const flowGallery = new FlowGallery();
 
+
+//increment/decrement for z index
+document.getElementByClassName("overlay").onmouseover = function() {zIndex()};
+
+function zIndex() {
+  document.getElementByClassName("overlay").style.zIndex = "2";
+}
+
+function mouseOverIncrement() {
+      if (document.getElementByClassName("overlay").onmouseover) {
+
+      }
+  }
+}
